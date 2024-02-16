@@ -1,0 +1,16 @@
+create table if not exists canonical_src_meta_history(
+history_date varchar(255) not null,
+country_code varchar(255) null,
+rtng_meta varchar(255) null,
+src varchar(255) null,
+action_flag varchar(255) null,
+action_done char null,
+action_type varchar(255) null,
+acted_by varchar(255) null,
+action_source varchar(255) null,
+updated_from_source varchar(255) null,
+removed_from_source varchar(255) null,
+creation_date varchar(255) null,
+modified_date varchar(255) null,
+entity_state varchar(255) null,
+constraint canonical_src_meta_history_pk primary key(history_date));
